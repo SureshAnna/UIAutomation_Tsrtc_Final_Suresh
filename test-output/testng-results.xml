@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17656" started-at="2018-07-31T08:51:44Z" finished-at="2018-07-31T08:52:01Z">
+  <suite name="Default suite" duration-ms="19009" started-at="2018-07-31T09:10:12Z" finished-at="2018-07-31T09:10:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17656" started-at="2018-07-31T08:51:44Z" finished-at="2018-07-31T08:52:01Z">
+    <test name="Default test" duration-ms="19009" started-at="2018-07-31T09:10:12Z" finished-at="2018-07-31T09:10:31Z">
       <class name="com.tsrtc.registration.testscripts.RegistrationTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="beforeClass" is-config="true" duration-ms="6569" started-at="2018-07-31T14:21:44Z" finished-at="2018-07-31T14:21:50Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@5702b3b1]" name="beforeClass" is-config="true" duration-ms="7763" started-at="2018-07-31T09:10:12Z" finished-at="2018-07-31T09:10:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="registrationTest(java.util.LinkedHashMap)[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="registrationTest" duration-ms="2641" started-at="2018-07-31T14:21:51Z" data-provider="getData" finished-at="2018-07-31T14:21:53Z">
+        <test-method status="PASS" signature="registrationTest(java.util.LinkedHashMap)[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@5702b3b1]" name="registrationTest" duration-ms="2412" started-at="2018-07-31T09:10:21Z" data-provider="getData" finished-at="2018-07-31T09:10:23Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method status="PASS" signature="registrationTest(java.util.LinkedHashMap)[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="registrationTest" duration-ms="2045" started-at="2018-07-31T14:21:53Z" data-provider="getData" finished-at="2018-07-31T14:21:55Z">
+        <test-method status="PASS" signature="registrationTest(java.util.LinkedHashMap)[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@5702b3b1]" name="registrationTest" duration-ms="2328" started-at="2018-07-31T09:10:23Z" data-provider="getData" finished-at="2018-07-31T09:10:25Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="afterClass" is-config="true" duration-ms="5725" started-at="2018-07-31T14:21:55Z" finished-at="2018-07-31T14:22:01Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@5702b3b1]" name="afterClass" is-config="true" duration-ms="5724" started-at="2018-07-31T09:10:25Z" finished-at="2018-07-31T09:10:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
