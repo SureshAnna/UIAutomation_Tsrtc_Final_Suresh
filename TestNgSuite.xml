@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tsrtc Suite" verbose="1">
+    
+    <listeners>
+		<listener class-name="com.tsrtc.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+    
+    
+	<test name="Registration Test">
+		<parameter name="ReadExcelPath"
+			value="src/test/resources/com/tsrtc/registration/testData/RegistrationTest.xlsx" />
+		
+		<parameter name="DataSheetName" value="RegistrationTest" />
+		<classes>
+			<class name="com.tsrtc.registration.testscripts.RegistrationTest" />
+		</classes>
+	</test>
+</suite>
+
+<!-- E:\resume\UIAutomation\src\test\resources\com\tsrtc\registration\testData\RegistrationTest.xlsx -->

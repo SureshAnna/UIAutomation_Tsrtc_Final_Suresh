@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17656" started-at="2018-07-31T08:51:44Z" finished-at="2018-07-31T08:52:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17656" started-at="2018-07-31T08:51:44Z" finished-at="2018-07-31T08:52:01Z">
+      <class name="com.tsrtc.registration.testscripts.RegistrationTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="beforeClass" is-config="true" duration-ms="6569" started-at="2018-07-31T14:21:44Z" finished-at="2018-07-31T14:21:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="registrationTest(java.util.LinkedHashMap)[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="registrationTest" duration-ms="2641" started-at="2018-07-31T14:21:51Z" data-provider="getData" finished-at="2018-07-31T14:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{address1=Medplus, address2=Main Road, city=Hyderabad, postalCode=500071, idCardNumber=H2029021, issueAuthority=Passport Team, gender=FEMALE, nationalityId=INDIAN, idCardType=PASSPORT}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+        <test-method status="PASS" signature="registrationTest(java.util.LinkedHashMap)[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="registrationTest" duration-ms="2045" started-at="2018-07-31T14:21:53Z" data-provider="getData" finished-at="2018-07-31T14:21:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{address1=Gokul Plots, address2=SR Residency, city=Hyderabad, postalCode=500072, idCardNumber=H2029025, issueAuthority=Passport Team, gender=MALE, nationalityId=INDIAN, idCardType=PASSPORT}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.tsrtc.registration.testscripts.RegistrationTest@e25b2fe]" name="afterClass" is-config="true" duration-ms="5725" started-at="2018-07-31T14:21:55Z" finished-at="2018-07-31T14:22:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.tsrtc.registration.testscripts.RegistrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
