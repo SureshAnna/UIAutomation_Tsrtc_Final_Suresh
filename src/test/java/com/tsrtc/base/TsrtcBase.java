@@ -1,5 +1,7 @@
 package com.tsrtc.base;
 
+import java.io.File;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -7,6 +9,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.tsrtc.pom.TsrtcHomePage;
 import com.tsrtc.utils.CommonUtil;
 import com.tsrtc.utils.DataBaseUtil;
@@ -39,15 +44,26 @@ public abstract class TsrtcBase {
 	protected PerformActionsUtil performActionsUtil;
 
 	public WebDriver driver;
-
+	public ExtentReports extent;
+	public ExtentTest testLogger;
 
 	@BeforeClass
 	public void beforeClass() {
 		propertiesUtil.initProperties();
+		String workingDir = System.getProperty("user.dir");
+		extent = new ExtentReports(workingDir
+				+ "\\test-output\\ExtentReport.html");
+		extent.addSystemInfo("Host Name", "UI Automationdemo");
+		extent.addSystemInfo("Environment", "Automation Testing");
+		extent.addSystemInfo("User Name", "Suresh Kanaparthi");
+		extent.loadConfig(new File(System.getProperty("user.dir")
+				+ "\\extent-config.xml"));
 		driver = browserUtil.openBrowser(PropertiesUtil.browserName,
 				PropertiesUtil.url);
 		performActionsUtil = new PerformActionsUtil(driver);
 		System.out.println("testing");
+		testLogger = extent.startTest("Test Name", "Description");
+		testLogger.log(LogStatus.PASS, "opened application successfully");
 		
 	}
 	@DataProvider
@@ -58,8 +74,10 @@ public abstract class TsrtcBase {
 	@AfterClass
 	public void afterClass() throws InterruptedException {
 		Thread.sleep(5000);
+		extent.endTest(testLogger);
 		// driver.close();
 		driver.quit();
+		extent.flush();
 	}
 
 	

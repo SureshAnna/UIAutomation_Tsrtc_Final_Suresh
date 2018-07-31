@@ -1,5 +1,6 @@
 package com.tsrtc.utils;
 
+import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.LinkedHashMap;
@@ -35,8 +36,9 @@ public class ExcelUtil {
 		Object[][] data = null;
 		LinkedHashMap<String, String> linkedHashMap;
 		try {
-			Workbook workbook = WorkbookFactory.create(new FileInputStream(
-					excelFilePath));
+			BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(excelFilePath));
+			
+			Workbook workbook = WorkbookFactory.create(bufferedInputStream);
 			Sheet sheet = workbook.getSheet(sheetName);
 
 			int rowCount = sheet.getLastRowNum() + 1;
